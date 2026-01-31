@@ -53,40 +53,38 @@ export function CopyInstructionsCard() {
 
   return (
     <section id="install" className="py-12 bg-white">
-      <div className="max-w-3xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         <div className="p-6 md:p-8 rounded-3xl bg-white border border-neutral-200">
-          <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-6">
-              Add skill to your agent in seconds
-            </h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-6">
+            Ask your agent to add the skill
+          </h2>
 
-            {/* Command display and copy */}
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <div className="w-full max-w-2xl">
-                <div className="code-block flex items-center justify-between px-4 py-4 text-left">
-                  <code className="text-neutral-700 text-sm break-all">
-                    {SKILL_COMMAND}
-                  </code>
-                  <button
-                    onClick={handleCopy}
-                    className="flex-shrink-0 ml-4 p-2 rounded-lg hover:bg-neutral-100 transition-colors"
-                    aria-label="Copy command"
-                  >
-                    {copied ? (
-                      <Check className="w-4 h-4 text-coral-500" />
-                    ) : (
-                      <Copy className="w-4 h-4 text-neutral-400" />
-                    )}
-                  </button>
-                </div>
+          {/* Command display and copy */}
+          <div className="mb-4">
+            <div className="w-full max-w-2xl">
+              <div className="code-block flex items-center justify-between px-4 py-4 text-left">
+                <code className="text-neutral-700 text-sm break-all">
+                  {SKILL_COMMAND}
+                </code>
+                <button
+                  onClick={handleCopy}
+                  className="flex-shrink-0 ml-4 p-2 rounded-lg hover:bg-neutral-100 transition-colors"
+                  aria-label="Copy command"
+                >
+                  {copied ? (
+                    <Check className="w-4 h-4 text-coral-500" />
+                  ) : (
+                    <Copy className="w-4 h-4 text-neutral-400" />
+                  )}
+                </button>
               </div>
             </div>
-
-            {/* Manual instructions */}
-            <p className="text-neutral-500 text-sm max-w-sm mx-auto">
-              In your code editor you can also open settings, find rules, click new skills, and paste repo.
-            </p>
           </div>
+
+          {/* Manual instructions */}
+          <p className="text-neutral-500 text-sm max-w-md">
+            In your code editor you can also open settings, find rules, click new skills, and paste repo.
+          </p>
         </div>
       </div>
     </section>

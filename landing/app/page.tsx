@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import HowItWorks from "@/components/HowItWorks";
+import WhyThis from "@/components/WhyThis";
 import { CopyInstructionsCard } from "@/components/CopyInstructions";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <CopyInstructionsCard />
+      <WhyThis />
       <HowItWorks />
     </main>
   );

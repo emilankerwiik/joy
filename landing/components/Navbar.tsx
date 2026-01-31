@@ -14,10 +14,16 @@ export default function Navbar() {
         {/* Nav links */}
         <div className="hidden md:flex items-center gap-8">
           <a
-            href="#features"
+            href="#instructions"
             className="text-neutral-600 hover:text-neutral-900 transition-colors text-sm"
           >
-            Features
+            How to use
+          </a>
+          <a
+            href="#why-this"
+            className="text-neutral-600 hover:text-neutral-900 transition-colors text-sm"
+          >
+            Roadmap
           </a>
           <a
             href="#how-it-works"
@@ -26,10 +32,12 @@ export default function Navbar() {
             How it works
           </a>
           <a
-            href="#install"
+            href="https://portal.thirdweb.com/x402"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-neutral-600 hover:text-neutral-900 transition-colors text-sm"
           >
-            Install
+            x402
           </a>
         </div>
 
