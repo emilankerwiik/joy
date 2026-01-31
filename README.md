@@ -15,7 +15,7 @@ Enable your AI agents to make micropayments using the [x402 protocol](https://x4
 1. Open Cursor Settings (`Cmd+Shift+J` / `Ctrl+Shift+J`)
 2. Go to **Rules** → **Add Rule** → **Remote Rule (Github)**
 3. Paste: `github.com/emilankerwiik/openkrill`
-4. Ask Cursor: "Set up my environment for x402 payments"
+4. Ask Cursor: "Set up my .env file for x402 payments"
 5. Follow the onramp flow to fund your wallet
 
 ### OpenClaw
@@ -32,8 +32,8 @@ clawhub install openkrill
 ### Claude Code
 
 1. Add the skill from `github.com/emilankerwiik/openkrill`
-2. Ask your agent: "Set up my environment for x402 payments"
-3. Follow the onramp flow to fund your wallet
+2. Configure your environment
+3. Use the onramp flow to fund your wallet
 
 ## Top Services Supporting x402
 
